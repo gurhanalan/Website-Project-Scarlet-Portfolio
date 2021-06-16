@@ -374,7 +374,8 @@ div.service:hover::after {
 .skills__design--progress,
 .skills__coding--progress {
     width: 100%;
-    padding: 0.2rem;
+    /* height: 1rem; */
+    padding: 0.1rem;
     background-color: var(--tertiary-color-m);
     /* border: solid 0.5rem var(--tertiary-color-m); */
     border-radius: 3rem;
