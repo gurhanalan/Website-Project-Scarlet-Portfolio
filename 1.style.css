@@ -410,6 +410,40 @@ div.service:hover::after {
 
     vertical-align: middle;
 }
+
+/* TESTIMONIALS SECTION */
+#testimonials {
+    background-color: var(--secondary-color);
+    padding: 5rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.testimonials__card {
+    position: relative;
+}
+
+.testimonials__card--content {
+    background-color: hsla(181, 97%, 15%, 0.611);
+    padding: 3rem 2rem;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: -3rem;
+    width: 100%;
+    transform: scaleY(0%);
+    transform-origin: top;
+
+    transition: transform 0.2s;
+}
+
+.testimonials__card:hover .testimonials__card--content {
+    transform: scaleY(100%);
+    transform-origin: bottom;
+}
 /* Media Queries */
 @media screen and (max-width: 960px) {
     section#about-me {
